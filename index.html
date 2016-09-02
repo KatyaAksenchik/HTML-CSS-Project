@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>You-Alpinist</title>
+        <link rel="icon" type="image/png" href="pictures/site_logo_small.png">
+        <!-- подключение .CSS -->
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- подключение шрифтов -->
+                <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <!-- подключение font-awesome -->
+                <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+        <!-- подключение jquery -->
+                <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+        <!-- bxslider -->
+                <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+                <link href="js/jquery.bxslider.css" rel="stylesheet"/>
+    </head>
+    	<body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<div id="bg_layer"></div>
+
+<p id="back-top">
+	<a href="#top"><span></span></a>
+</p>
+
+<div class="form">
+<img src="pictures/cross.png" class="cross" >
+<p>Логин</p>
+   <input type="text" id="nickname" >
+   <span class="hide">Поле должно содержать от 3 до 20 символов!<br></span>
+<br>
+<p>Пароль</p>
+   <input type="password" id="pass" >
+   <span class="hide">Заполните поле<br></span>
+<br>
+<br>
+  <input type="submit" id="send" value="ВОЙТИ" class="logo_search_button">
+</div>
+
+<div class="map_navigation">
+  <ul>
+    <a href="index.html" title="Главная"><li>Главная
+      <ol>
+        <li><a href="index.html#alp_his" title="История альпинизма">История альпинизма </a></li>
+        <li><a href="index.html#bes_fil" title="Лучшие фильмы">Лучшие фильмы</a></li>
+      </ol>
+
+                                        </li></a>
+    <a href="about.html" title="О клубе"><li >О клубе
+     <ol>
+       <li><a href="about.html#bac_con" title="Обратная связь">Обратная связь</a></li>
+       <li><a href="about.html#find_us" title="Как нас найти">Как нас найти</a></li>
+     </ol>
+
+    </li></a>
+    <a href="news.html" title="Новости"><li class="choosen">Новости/Отчеты</li></a>
+    <a href="timetable.html" title="Расписание"><li>Расписание тренировок
+     <ol>
+        <li><a href="timetable.html#tab_sh" title="Расписание">Расписание по дням недели</a></li>
+        <li><a href="timetable.html#coach" title="Тренера">Наши тренера</a></li>
+     </ol>
+
+    </li></a>
+    <a href="more.html" title="Полезное"><li>Полезное
+         <ol>
+           <li><a href="more.html#gal" title="Галерея">Галерея</a></li>
+           <li><a href="more.html#vid_int" title="Ролики">Интересные ролики</a></li>
+         </ol>
+    </li></a>
+  </ul>
+
+</div>
+
+<div class="wrapper">
+
+  <!-- <div class="logo">
+
+	 <div class="logo_div">
+      <a href="index.html" class="logo_position">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип"></a>
+      <p class="name_of_site"><a href="index.html">You-Alpinist</a></p>
+</div>
+<div>
+          <input type="text" name="search" class="search_position logo_search_button">
+          <input type="button" name="search_button" value="ПОИСК" class="search_position logo_search_button">
+		  <input type="button" name="search_button" value="ВХОД" class="search_position logo_search_button " id="enter_button">
+  <p class="login">
+   Вы вошли как:<span></span>
+  </p>
+</div>
+
+  </div> -->
+
+  <div class="logo">
+    <div class="logo_div">
+	  <a href="index.html" title="You-alpinist">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип" class="logo_position"></a>
+      <p class="name_of_site"><a href="index.html" title="You-alpinist">You-Alpinist</a></p>
+	</div>
+	<div class="logo_div">
+	     <form  action="index.html" method="post" class="search_position">
+			  <input type="text" name="search" class="logo_search_button">
+			  <input type="button" name="search_button" value="ПОИСК" class="logo_search_button">
+			  <input type="button" name="search_button" value="ВХОД" class="logo_search_button " id="enter_button">
+					  <p class="login">
+					   Вы вошли как:<span></span>
+					  </p>
+		 </form>
+	</div>
+  </div>
+
+
+  <div id="site_navigation">
+    <input type="button" name="menu" value="МЕНЮ" class="menu_button">
+		<div id="ul_nav">
+		<ul>
+		  <a href="index.html" title="Главная"><li>Главная</li></a>
+		  <a href="about.html" title="О клубе"><li>О клубе</li></a>
+		  <a href="news.html" title="Новости"><li>Новости/Отчеты</li></a>
+		  <a href="timetable.html" title="Расписание"><li>Расписание тренировок</li></a>
+		  <a href="more.html" title="Полезное"><li>Полезное</li></a>
+		</ul>
+		</div>
+  </div>
+
+<!-- конец header -->
+<div class="way_back">
+ <p>
+<span class="map_of_the_site"><i class="fa fa-map-o"></i> Карта сайта</spna>
+</p>
+</div>
+
+<div id="index_main">
+  <div class="left_part">
+      <div class="slider">
+        <ul class="bxslider">
+          <li><img src="pictures/img_1_slider.jpg" alt="Эерест" title="Эверест"/></li>
+          <li><img src="pictures/img_2_slider.jpg" alt="Горный массив" title="Горный массив"/></li>
+          <li><img src="pictures/img_3_slider.jpg" alt="Горы в тумане" title="Горы в тумане"/></li>
+        </ul>
+      </div>
+
+      <div class="line">
+        <span class="block-title">Краткая история альпинизма</span>
+      </div>
+<a name="alp_his"></a>
+        <div class="history_of_alp">
+          <p class="two_column_text">Альпинизм - вид спорта, восхождение на труднодоступные горные вершины. Слово «альпинизм» происходит от названия Альп — высочайшей горной системы Западной Европы.
+            <br>Виды восхождений в альпинизме : учебные, тренировочные, зачетные, спортивные, промьплпенные прохождения альпинистских маршрутов (геологические, картографические и т.п.) и туристические, совершаемые в порядке активного отдыха. Восхождения на вершины высотой более 6000 м называются высотным альпинизмом.
+            <br>Альпинизм зародился в Центральной Европе. В 1786 по инициативе швейцарского ученого Г. Соссюра на высшую точку Альп — вершину Монблан поднялись М. Паккари и Ж. Бальма. Принято считать, что это событие положило начало мировому альпинизму. В 1865 английские скалолазы покорили альпийскую вершину Маттерхорн, совершив восхождение по технически сложному пути. Эта дата считается началом спортивного альпинизма — восхождение по сложным маршрутам со спортивными целями.
+            Начало высотному альпинизму положил в 1907 англичанин Том Лонгстафф, покоривший пик Трисуп в Гималаях, превышающий по высоте 7000 м. В 1950 участники французской экспедиции М.Эрцог и Л. Ляшеналь сов ершили в о схождение на гималайскую вершину Аннапурна, высота которой 8078 м. Высшая точка Земли — гора Джомолунгма (Эверест, Сагарматха, 8848 м) была покорена 29 мая 1953 шерпом Норгэем Тенцингом (гражданин Индии) и новозеландцем Эдмундом Хиппари, тогда же вершину покорила английская экспедиция, возглавляемая Джоном Хаитом. </p>
+        </div>
+  </div>
+  <div class="right_part">
+       <div class="add_block"><i class="fa fa-thumbs-up"></i>Интересно знать</div>
+
+          <div class="add_block">
+              <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B2%D1%8B%D1%81%D0%BE%D1%87%D0%B0%D0%B9%D1%88%D0%B8%D1%85_%D0%B2%D0%B5%D1%80%D1%88%D0%B8%D0%BD_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8"
+              target="_blank" alt="Высочайшие горы" title="Высочайшие горы">
+                  <img src="pictures/mountains.jpg" title="Высочайшие горы" alt="Высочайшие горы">
+                    <i class="fa fa-eye"></i>1025 <i class="fa fa-commenting-o"></i>235<br>
+                      Самые высокие горы
+              </a>
+          </div>
+
+          <div class="add_block">
+                <a href="http://www.sk-greta.ru/equipment/" target="_blank">
+                  <img src="pictures/tools.jpg" alt="Снаряжение" title="Снаряжение">
+                    <i class="fa fa-eye"></i>1239 <i class="fa fa-commenting-o"></i>553<br>
+                      Необходимое снаряжение
+                </a>
+           </div>
+
+           <div class="add_block">
+               <a href="http://www.sk-greta.ru/equipment/" target="_blank">
+                 <img src="pictures/stuff.jpg" alt="Что взять с собой" title="Что взять с собой">
+                     <i class="fa fa-eye"></i>863 <i class="fa fa-commenting-o"></i>345<br>
+                        Что взять с собой
+               </a>
+           </div>
+  </div>
+</div>
+
+<div class="quote">
+  <p>Не рекомендуется пить спиртные напитки в горах.
+    Однако, в момент срыва желательно быть в стельку пьяным.
+  </p>
+</div>
+
+<div class="title">
+  <p>
+    <i class="fa fa-star-o"></i> Фильмы про альпинизм
+  </p>
+</div>
+
+<a name="bes_fil"></a>
+<div class="best_films">
+    <div class="box_film">
+      <p class="name_of_film">
+        Эверест/Everest (2015)
+      </p><br>
+        <img src="pictures/ev_1.jpg" alt="Эверест" title="Эверест"/><br>
+          <p>
+            Картина основана на реальных событиях, описанных в книге живого свидетеля массовой гибели альпинистов в мае 1996 г.
+            журналиста Джона Кракауэра В разреженном воздухе/Into Thin Air. Сценаристы Марк Мидофф и Саймон Бофой пересказывают
+            историю о восхождении двух разных экспедиций, собранных из абсолютно разных людей, как профессионалов, так и подготовленных
+            туристов. Практически все альпинисты дошли до вершины, буря застала их уже во время спуска. Измученные подъемом, холодом,
+            ветром и нехваткой кислорода вниз спустились уже не все. От видов Эвереста, конечно, захватывает дух.
+          </p><br>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/YbOXOLMSxzQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="box_film">
+      <p class="name_of_film">
+      Скалолаз/Cliffhanger (1993)
+      </p><br>
+        <img src="pictures/pic_2_movie.jpg" alt="Эверест фильм" title="Эверест фильм" /><br><br>
+          <p>
+          Красивый боевик с Сильвестром Сталлоне в самом, что называется, соку. Собственно, поэзии альпинизма в фильме крайне мало, но если существует правильное, коммерческое преподнесение этой профессии посредством кинематографа - вот оно. Несмотря на довольно пошло сделанные комбинированные съемки, в фильме есть все составляющие успеха для приключенческой ленты 90-х - стрелялки-вертолеты, личная драма главного героя и его физические возможности, за гранью реальности.
+          </p><br><br>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/URdSD8UWxLk" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- конец основной части -->
+
+<div class="contact_info">
+  <div class="box_footer">
+    <ul class="f_nav">
+      <li><a href="index.html" title="На главная">Главная</a></li>
+      <li><a href="about.html" title="О клубе">О клубе</a></li>
+      <li><a href="news.html" title="Перейти на раздел Новости">Новости/Отчеты</a></li>
+      <li><a href="timetable.html" title="Перейти на раздел Расписание о тренировок">Расписание тренировок</a></li>
+      <li><a href="more.html"  title="Перейти на раздел Полезное">Полезное</a></li>
+  </ul>
+    </div>
+
+    <div class="box_footer">
+      <p>
+         <span>Ищите нас в социальных сетях:</span>
+       </p><br>
+
+<a href="https://www.youtube.com/user/journeytoalpinism" target="_blank" title="Youtube"
+ class="social_ikons"><i class="fa fa-youtube-square fa-3x"></i></a>
+<a href="https://www.instagram.com/alpinistmag/" target="_blank" title="Instagram"
+ class="social_ikons"><i class="fa fa-instagram fa-3x"></i></a>
+<a  href="https://twitter.com/alpinistmag" target="_blank" title="Twitter"
+class="social_ikons"><i class="fa fa-twitter-square fa-3x"></i></a>
+<a href="https://www.facebook.com/pages/%D0%90%D0%BB%D1%8C%D0%BF%D0%B8%D0%BD%D0%B8%D0%B7%D0%BC/211619918872448?fref=ts" target="_blank"
+ class="social_ikons" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+
+
+    </div>
+    <div class="box_footer">
+      <p>
+        <span>Подписаться на рассылку</span>
+      </p>
+      <br>
+      <input type="text" name="search" class="logo_search_button footer_subscribe text_sub"
+     required=""  placeholder="адрес электронной почты" x-autocompletetype="email">
+      <input type="button" name="subscribe" value="GO" class ="logo_search_button footer_subscribe go_sub">
+	  <span class="sub_hide"><br>Вы успешно подписались!</span>
+
+    </div>
+    <div class="box_footer">
+      <p>
+       <span>Контакты:</span>
+      </p>
+      <p>
+        tel: +37517345276345 <br>
+        phone: +374297653412 <br>
+        mail: you_alpinist@gmail.com
+      </p>
+
+    </div>
+</div>
+<div class="box_footer">
+  <p>
+    &copy Все права защищены
+  </p>
+</div>
+</div>
+
+<!-- конец footer -->
+
+ </body>
+</html>

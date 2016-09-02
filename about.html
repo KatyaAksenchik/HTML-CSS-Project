@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>О клубе</title>
+        <link rel="icon" type="image/png" href="pictures/site_logo_small.png">
+<!-- подключение .CSS -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- подключение шрифтов -->
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<!-- подключение font-awesome -->
+       <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+<!-- подключение jquery -->
+        <script src="js/jquery-1.12.0.js"></script>
+<!-- bxslider -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        <link href="js/jquery.bxslider.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<p id="back-top">
+	<a href="#top"><span></span></a>
+</p>
+
+      <div id="bg_layer"></div>
+      <div class="form">
+      <img src="pictures/cross.png" class="cross" >
+      <p>Логин</p>
+         <input type="text" id="nickname" >
+         <span class="hide">Поле должно содержать от 3 до 20 символов!<br></span>
+      <br>
+      <p>Пароль</p>
+          <input type="password" id="pass" >
+         <span class="hide">Заполните поле<br></span>
+      <br>
+      <br>
+        <input type="submit" id="send" value="ВОЙТИ" class="logo_search_button">
+      </div>
+
+      <div class="map_navigation">
+        <ul>
+          <a href="index.html" title="Главная"><li>Главная
+            <ol>
+              <li><a href="index.html#alp_his" title="История альпинизма">История альпинизма </a></li>
+              <li><a href="index.html#bes_fil" title="Лучшие фильмы">Лучшие фильмы</a></li>
+            </ol>
+
+                                              </li></a>
+          <a href="about.html" title="О клубе"><li >О клубе
+           <ol>
+             <li><a href="about.html#bac_con" title="Обратная связь">Обратная связь</a></li>
+             <li><a href="about.html#find_us" title="Как нас найти">Как нас найти</a></li>
+           </ol>
+
+          </li></a>
+          <a href="news.html" title="Новости"><li class="choosen">Новости/Отчеты</li></a>
+          <a href="timetable.html" title="Расписание"><li>Расписание тренировок
+           <ol>
+              <li><a href="timetable.html#tab_sh" title="Расписание">Расписание по дням недели</a></li>
+              <li><a href="timetable.html#coach" title="Тренера">Наши тренера</a></li>
+           </ol>
+
+          </li></a>
+          <a href="more.html" title="Полезное"><li>Полезное
+               <ol>
+                 <li><a href="more.html#gal" title="Галерея">Галерея</a></li>
+                 <li><a href="more.html#vid_int" title="Ролики">Интересные ролики</a></li>
+               </ol>
+          </li></a>
+        </ul>
+
+      </div>
+
+
+<div class="wrapper">
+
+  <!-- <div class="logo">
+
+	 <div class="logo_div">
+      <a href="index.html" class="logo_position">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип"></a>
+      <p class="name_of_site"><a href="index.html">You-Alpinist</a></p>
+</div>
+<div>
+          <input type="text" name="search" class="search_position logo_search_button">
+          <input type="button" name="search_button" value="ПОИСК" class="search_position logo_search_button">
+		  <input type="button" name="search_button" value="ВХОД" class="search_position logo_search_button " id="enter_button">
+  <p class="login">
+   Вы вошли как:<span></span>
+  </p>
+</div>
+
+  </div> -->
+
+  <div class="logo">
+    <div class="logo_div">
+	  <a href="index.html" title="You-alpinist">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип" class="logo_position"></a>
+      <p class="name_of_site"><a href="index.html" title="You-alpinist">You-Alpinist</a></p>
+	</div>
+	<div class="logo_div">
+	     <form  action="index.html" method="post" class="search_position">
+			  <input type="text" name="search" class="logo_search_button">
+			  <input type="button" name="search_button" value="ПОИСК" class="logo_search_button">
+			  <input type="button" name="search_button" value="ВХОД" class="logo_search_button " id="enter_button">
+					  <p class="login">
+					   Вы вошли как:<span></span>
+					  </p>
+		 </form>
+	</div>
+  </div>
+
+  <div id="site_navigation">
+    <input type="button" name="menu" value="МЕНЮ" class="menu_button">
+    <div id="ul_nav">
+    <ul>
+      <a href="index.html" title="Главная"><li>Главная</li></a>
+      <a href="about.html" title="О клубе"><li class="choosen">О клубе</li></a>
+      <a href="news.html" title="Новости"><li>Новости/Отчеты</li></a>
+      <a href="timetable.html" title="Расписание"><li>Расписание тренировок</li></a>
+      <a href="more.html" title="Полезное"><li>Полезное</li></a>
+    </ul>
+    </div>
+  </div>
+
+  <!-- конец header -->
+
+  <div class="way_back">
+   <p>
+  <span class="map_of_the_site"><i class="fa fa-map-o"></i> Карта сайта:</spna>
+  <a href="index.html">Главная</a> <i class="fa fa-arrow-right"></i> Новости/Отчеты
+   </p>
+  </div>
+
+<div class="about_main_box">
+
+            <div class="info_club_text">
+                <img src="pictures/about_club.jpg" alt="О клубе" title="О клубе"/>
+                <span >
+                  О клубе
+                </span><br><br>
+                        <p>
+                          Наш клуб создан в октябре 2004 года. Деятельность клуба основывается на лучших традициях
+                          и достижениях белорусского и советского альпинизма, а также на передовом опыте мирового
+                          альпинизма. </p><p>Задачи клуба: пропаганда и развитие альпинизма и скалолазания, организация
+                          и совершение путешествий и восхождений различной сложности во всех горных системах мира.
+                        </p><p>Основные направления деятельности клуба: альпинизм, ледолазание, скалолазание, организация
+                          экспедиций, восхождений, треккингов. Многие виды активности в горах являются потенциально
+                          опасными для здоровья и даже жизни человека. Поэтому базовый принцип, который лежит в
+                          основе деятельности нашего клуба – безопасность. Для этого служит система квалифицированной подготовки и обучения членов клуба на разных уровнях.
+                        </p>
+          </div>
+</div>
+
+<div class="back_connection">
+      <p class="title_of_connection">
+          <a name="bac_con"></a>
+        Есть вопросы? Свяжитесь с нами!
+      </p>
+                <form  action="index.html" method="post" class="form_"><br>
+                    <p>Введите ваше имя:</p>
+                      <input type="text" name="nameFF" required="" placeholder="фамилия имя отчество" x-autocompletetype="name"><br>
+                    <p>Введите ваш Email:</p>
+                      <input type="email" name="contactFF" required="" placeholder="адрес электронной почты" x-autocompletetype="email"><br>
+                    <p>Ваше сообщение:</p>
+                    	<textarea name="messageFF" required="" class="textarea"></textarea><br>
+                    <input type="submit" value="Oтправить" class="news_button"><br>
+               </form>
+          <br>
+      <p class="title_of_connection">
+          <a name="find_us"></a>
+          Как нас найти
+      </p>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.4082526348307!2d27.45697441543879!3d53.90672094029031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc52caa52a8f7%3A0x59307410d3f0a650!2z0YPQuy4g0J_RgNC40YLRi9GG0LrQvtCz0L4sINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1454876068370"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+</div>
+<div class="contact_info">
+  <div class="box_footer">
+    <ul class="f_nav">
+      <li><a href="index.html" title="На главная">Главная</a></li>
+      <li><a href="about.html" title="О клубе">О клубе</a></li>
+      <li><a href="news.html" title="Перейти на раздел Новости">Новости/Отчеты</a></li>
+      <li><a href="timetable.html" title="Перейти на раздел Расписание о тренировок">Расписание тренировок</a></li>
+      <li><a href="more.html"  title="Перейти на раздел Полезное">Полезное</a></li>
+  </ul>
+    </div>
+
+    <div class="box_footer">
+      <p>
+         <span>Ищите нас в социальных сетях:</span>
+       </p><br>
+
+<a href="https://www.youtube.com/user/journeytoalpinism" target="_blank" title="Youtube"
+ class="social_ikons"><i class="fa fa-youtube-square fa-3x"></i></a>
+<a href="https://www.instagram.com/alpinistmag/" target="_blank" title="Instagram"
+ class="social_ikons"><i class="fa fa-instagram fa-3x"></i></a>
+<a  href="https://twitter.com/alpinistmag" target="_blank" title="Twitter"
+class="social_ikons"><i class="fa fa-twitter-square fa-3x"></i></a>
+<a href="https://www.facebook.com/pages/%D0%90%D0%BB%D1%8C%D0%BF%D0%B8%D0%BD%D0%B8%D0%B7%D0%BC/211619918872448?fref=ts" target="_blank"
+ class="social_ikons" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+
+    </div>
+    <div class="box_footer">
+      <p>
+        Подписаться на рассылку
+      </p>
+      <br>
+      <input type="text" name="search" class="logo_search_button footer_subscribe text_sub">
+      <input type="button" name="subscribe" value="GO" class ="logo_search_button footer_subscribe go_sub">
+	  <span class="sub_hide"><br>Вы успешно подписались!</span>
+    </div>
+
+
+    <div class="box_footer">
+      <p>
+      Контакты:
+      </p>
+      <p>
+        tel: +37517345276345 <br>
+        phone: +374297653412 <br>
+        mail: you_alpinist@gmail.com
+      </p>
+
+    </div>
+</div>
+<div class="box_footer">
+  <p>
+    &copy Все права защищены
+  </p>
+</div>
+
+
+
+</div>
+</body>
+</html>

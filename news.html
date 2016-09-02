@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>Наши новости</title>
+        <link rel="icon" type="image/png" href="pictures/site_logo_small.png">
+        <!-- подключение .CSS -->
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- подключение шрифтов -->
+                <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <!-- подключение font-awesome -->
+                <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+        <!-- подключение jquery -->
+                <script src="js/jquery-1.12.0.js"></script>
+        <!-- bxslider -->
+                <script src="js/jquery.bxslider.min.js"></script>
+                <link href="js/jquery.bxslider.css" rel="stylesheet" />
+    </head>
+    <body>
+<script type="text/javascript" src="js/script.js"></script>
+<div id="bg_layer"></div>
+
+
+<p id="back-top">
+	<a href="#top"><span></span></a>
+</p>
+
+<div class="form register">
+<img src="pictures/cross.png" class="cross" >
+<p>Логин</p>
+   <input type="text" id="nickname" >
+   <span class="hide">Поле должно содержать от 3 до 20 символов!<br></span>
+<br>
+<p>Пароль</p>
+   <input type="password" id="pass" >
+   <span class="hide">Заполните поле<br></span>
+<br>
+<br>
+  <input type="submit" id="send" value="ВОЙТИ" class="logo_search_button">
+</div>
+
+
+<div class="wrapper">
+
+  <!-- <div class="logo">
+
+   <div class="logo_div">
+      <a href="index.html" class="logo_position">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип"></a>
+      <p class="name_of_site"><a href="index.html">You-Alpinist</a></p>
+</div>
+<div>
+          <input type="text" name="search" class="search_position logo_search_button">
+          <input type="button" name="search_button" value="ПОИСК" class="search_position logo_search_button">
+      <input type="button" name="search_button" value="ВХОД" class="search_position logo_search_button " id="enter_button">
+  <p class="login">
+   Вы вошли как:<span></span>
+  </p>
+</div>
+
+  </div> -->
+
+  <div class="logo">
+    <div class="logo_div">
+    <a href="index.html" title="You-alpinist">
+      <img src="pictures/logo.png" alt="Логотип" title="Логотип" class="logo_position"></a>
+      <p class="name_of_site"><a href="index.html" title="You-alpinist">You-Alpinist</a></p>
+  </div>
+  <div class="logo_div">
+       <form  action="index.html" method="post" class="search_position">
+        <input type="text" name="search" class="logo_search_button">
+        <input type="button" name="search_button" value="ПОИСК" class="logo_search_button">
+        <input type="button" name="search_button" value="ВХОД" class="logo_search_button " id="enter_button">
+            <p class="login">
+             Вы вошли как:<span></span>
+            </p>
+     </form>
+  </div>
+  </div>
+
+
+  <div id="site_navigation">
+    <input type="button" name="menu" value="МЕНЮ" class="menu_button">
+    <div id="ul_nav">
+    <ul>
+      <a href="index.html" title="Главная"><li>Главная</li></a>
+      <a href="about.html" title="О клубе"><li >О клубе</li></a>
+      <a href="news.html" title="Новости"><li class="choosen">Новости/Отчеты</li></a>
+      <a href="timetable.html" title="Расписание"><li>Расписание тренировок</li></a>
+      <a href="more.html" title="Полезное"><li>Полезное</li></a>
+    </ul>
+    </div>
+  </div>
+
+  <div class="map_navigation">
+    <ul>
+      <a href="index.html" title="Главная"><li>Главная
+        <ol>
+          <li><a href="index.html#alp_his" title="История альпинизма">История альпинизма </a></li>
+          <li><a href="index.html#bes_fil" title="Лучшие фильмы">Лучшие фильмы</a></li>
+        </ol>
+
+                                          </li></a>
+      <a href="about.html" title="О клубе"><li >О клубе
+       <ol>
+         <li><a href="about.html#bac_con" title="Обратная связь">Обратная связь</a></li>
+         <li><a href="about.html#find_us" title="Как нас найти">Как нас найти</a></li>
+       </ol>
+
+      </li></a>
+      <a href="news.html" title="Новости"><li class="choosen">Новости/Отчеты</li></a>
+      <a href="timetable.html" title="Расписание"><li>Расписание тренировок
+       <ol>
+          <li><a href="timetable.html#tab_sh" title="Расписание">Расписание по дням недели</a></li>
+          <li><a href="timetable.html#coach" title="Тренера">Наши тренера</a></li>
+       </ol>
+
+      </li></a>
+      <a href="more.html" title="Полезное"><li>Полезное
+           <ol>
+             <li><a href="more.html#gal" title="Галерея">Галерея</a></li>
+             <li><a href="more.html#vid_int" title="Ролики">Интересные ролики</a></li>
+           </ol>
+      </li></a>
+    </ul>
+
+  </div>
+
+
+
+  <!-- конец header -->
+
+<div class="way_back">
+ <p>
+<span class="map_of_the_site"><i class="fa fa-map-o"></i> Карта сайта:</spna>
+<a href="index.html" title="На Главную">Главная</a> <i class="fa fa-arrow-right"></i> Новости/Отчеты
+ </p>
+</div>
+<div class="slider_news">
+  <ul class="bxslider_news">
+    <li><img src="pictures/slider_news_1.jpg" alt="Восхождение" title="Восхождение"/></li>
+    <li><img src="pictures/slider_news_2.jpg" alt="Поход" title="Поход"/></li>
+    <li><img src="pictures/slider_news_3.jpg"alt="Путешествие" title="Путешествие"/></li>
+  </ul>
+</div>
+
+<div class="news_block">
+     <img src="pictures/img_news_1.jpg" alt="Альпинист" title="Альпинист"/>
+        <p class="news_title"> На Эльбрусе погиб альпинист</p><br>
+            <p>В горах Кабардино-Балкарии погиб альпинист, личность которого пока не установлена, сообщили
+              корреспонденту  Кавказ Сегодня  в пресс-службе республиканского главка МЧС.</p>
+            <p>Как, в свою очередь, рассказал оперативный дежурный Эльбрусского высокогорного
+              поисково-спасательного отряда, информация о трагедии поступила от находящихся в горах
+              альпинистов.  Сначала сообщили о том, что в районе скал Пастухова на высоте 4800-4900 метров
+              сорвался человек. Потом   что обнаружили тело с окровавленной головой.
+              Говорить что-то о его личности мы не можем   в этом районе сейчас работают две иностранные
+              группы, которые пока не выходят на связь ,   уточнил собеседник агентства.
+              На место происшествия выдвинулась группа спасателей Эльбрусского ВПСО.</p>
+              <p>Источник: <a href="www.kavtoday.ru" title="Kavtoday">www.kavtoday.ru</a> </p>
+</div>
+
+<div class="news_block">
+      <img src="pictures/img_news_2.jpg" alt="Максут Жумаев" title="Максут Жумаев" />
+          <p class="news_title">Альпинист Максут Жумаев устроит реалити-шоу из предстоящего восхождения на пик Аконкагуа</p><br>
+              <p>В начале следующей недели известный казахстанский альпинист Максут Жумаев и путешественник
+              Магжан Сагимбаев вылетают в Аргентину. Они планируют совершить восхождение на самую высокую
+              гору Южной Америки   пик Аконкагуа (6962 метра над уровнем моря). Они cобираются водрузить
+              на вершине флаги Казахстана и предстоящей Всемирной зимней Универсиады-2017.</p>
+               <p>Мы придумали интересную фишку: возьмем с собой сразу два государственных флага нашей страны,
+               рассказал Максут Жумаев.   По цвету и орнаменту они абсолютно идентичны. Но с первым Магжан
+               Сагимбаев на велосипеде совершил кругосветное путешествие, а со вторым я провел бескислородные
+               восхождения на все 14 высочайших горных вершин в мире, высота которых превышает 8 тысяч метров
+               над уровнем моря.</p>
+                      <input type="button" name="show_more" value="Показать больше" class="show_more news_button">
+              <div class="hide_part">
+              <p>Уже во вторник казахстанская малочисленная экспедиция прибудет в Буэнос-Айрес, откуда возьмет
+              курс на курортный город Муньос. Оттуда пешим ходом отправится в базовый лагерь Плаца
+              де Мулас (4350 м). Ориентировочно восхождение начнется после второй или третьей недели пребывания
+              в Аргентине. На покорение вершины Максут Жумаев и Магжан Сагимбаев планируют отправиться
+               из штурмового лагеря Берлин (5900 м) по классическому маршруту по северо-западному гребню.</p>
+
+              <p> С альпинистской точки зрения, восхождение не представляет серьезной трудности,
+                объяснял Максут Жумаев.   Это, в принципе, простая гора. Но могу по своему опыту сказать,
+                что легких восхождений не бывает. Скорость ветра на вершине достигает более 100 км/ч.</p>
+              <p>Зато казахстанские горовосходители собираются устроить из своего путешествия самое настоящее
+                интерактивное шоу. С собой в дорогу они берут самую современную аппаратуру,
+                чтобы постоянно быть на связи.</p>
+
+                <p>Вас ждет горячее реалити-шоу,   обещает известный казахстанский альпинист.
+                   Впервые в истории мы проведем инновационный проект: устроим эдакую альпинистскую
+                   экспедиция с эффектом присутствия. Мы приобрели интересные современные гаджеты,
+                   которые только появились в продаже. Будем постоянно находиться на связи в "Фейсбуке"
+                   и "Инстаграме". Планируем даже немного  поперископить : когда взойдем на вершину,
+                   обязательно проведем прямое включение. В процессе экспедиции любой желающий сможет
+                   задать нам любой интересующий вопрос. Например: "Чем сейчас занимаетесь?" И тут же
+                   получить ответ: "Сидим в палатке и запариваем китайскую лапшу". (Смеется.) Одним словом,
+                   вместе с нами виртуальное восхождения на пик Аконкагуа смогут совершить все 17 миллионов
+                   казахстанцев.</p>
+
+
+              <p>Иван Резванцев
+              <a href="http://www.sports.kz/" title="Sports.kz">http://www.sports.kz/</a></p>
+              <br>
+                      <input type="button" name="hide_more" value="Скрыть" class="hide_more news_button">
+              </div>
+</div>
+
+
+<div class="news_block">
+        <img src="pictures/img_news_3.jpg" alt="Букреев" title="Букреев" />
+            <p class="news_title">Каменные храмы Букреева</p><br>
+                  <p>Как южноуральский альпинист стал национальным героем Казахстана</p>
+                  <p>За 39 лет своей жизни Анатолий Букреев покорил около 20 величайших вершин мира, став одним
+                    из сильнейших альпинистов планеты. На пять гор высотой более 8 тыс. метров он взобрался всего
+                    за год, установив мировой рекорд восхождений.</p>
+
+                  <p>Альпинист погиб в 1997 году, покоряя очередную высоту. В Казахстане и в США имя этого
+                    человека знают многие. Но впервые в родном городе Коркино Челябинской области состоялись
+                    вечера памяти в честь дня рождения знаменитого земляка. 16 января ему бы исполнилось 58 лет.</p>
+
+                  <p>От Уральских гор до Гималаев</p>
+
+                  <p>Родные вспоминают, что в детстве Анатолий Букреев на уроках все схватывал на лету,
+                    хорошо учился, особенно легко ему давались точные науки   физика, математика. Очень
+                    любил заниматься спортом и после уроков постоянно допоздна пропадал в спортзале.</p>
+                          <input type="button" name="show_more" value="Показать больше" class="show_more news_button">
+
+                    <div class="hide_part">
+                      <p>Анатолий не выглядел атлетом, однако был весьма упорным: ежедневно с утра на турнике
+                        выжимал из себя все, что можно,   рассказывает старший брат альпиниста, Александр Букреев.
+                        Когда он познакомился с Татьяной Дмитриевной Ретюнской, у брата начались походы на Таганай,
+                        различные экскурсии. Помню, Новый год, домашний праздник, а брата дома нет   с группой ушел
+                        в горы на Таганай.</p>
+
+                    <p>Немногие знают, что история развития детского скалолазания в России зародилось в Коркине,
+                      где родился и вырос Анатолий Букреев. В 1970 году здесь была открыта первая секция юных
+                      альпинистов-скалолазов, которая и дала ему пропуск в альпинизм. Наставницей Букреева,
+                      заложившей основы мастерства в альпинизме, стала тренер Татьяна Ретюнская.</p>
+
+                      <p>В 1970 году я впервые смогла повести ребят в большой туристский поход протяженностью
+                        порядка 300 км по вершинам Южного Урала,   вспоминает Татьяна Дмитриевна.
+                        Мы готовились к нему несколько лет. И вот в один из дней появляется рыжий
+                        мальчишка с кедами через плечо   это был 12-летний Толя Букреев. На второй
+                        день он стал проситься с нами в поход. Я ему говорю:  Толик, но ведь ребята
+                        готовились продолжительное время!  А он мне в ответ:  Я очень хочу, все знаю,
+                        мне все мальчишки рассказали . На пятый день он все-таки уговорил взять его с собой.
+                        Конечно, на первое восхождение на одну из самых сложных вершин Имантау мы его не взяли.
+                        Зато все остальные он покорил с нами наравне. Спустя годы он признался, что этот поход
+                         сыграл в его жизни решающую роль. Тогда он влюбился в горы...</p>
+
+                    <p>Источник: <a href="http://rusplt.ru" title="Rusplt">http://rusplt.ru</a> </p><br>
+                    <input type="button" name="hide_more" value="Скрыть" class="hide_more news_button">
+</div>
+</div>
+
+<div class="contact_info">
+  <div class="box_footer">
+    <ul class="f_nav">
+      <li><a href="index.html" title="На главная">Главная</a></li>
+      <li><a href="about.html" title="О клубе">О клубе</a></li>
+      <li><a href="news.html" title="Перейти на раздел Новости">Новости/Отчеты</a></li>
+      <li><a href="timetable.html" title="Перейти на раздел Расписание о тренировок">Расписание тренировок</a></li>
+      <li><a href="more.html"  title="Перейти на раздел Полезное">Полезное</a></li>
+  </ul>
+    </div>
+
+    <div class="box_footer">
+      <p>
+         <span>Ищите нас в социальных сетях:</span>
+       </p><br>
+
+<a href="https://www.youtube.com/user/journeytoalpinism" target="_blank" title="Youtube"
+ class="social_ikons"><i class="fa fa-youtube-square fa-3x"></i></a>
+<a href="https://www.instagram.com/alpinistmag/" target="_blank" title="Instagram"
+ class="social_ikons"><i class="fa fa-instagram fa-3x"></i></a>
+<a  href="https://twitter.com/alpinistmag" target="_blank" title="Twitter"
+class="social_ikons"><i class="fa fa-twitter-square fa-3x"></i></a>
+<a href="https://www.facebook.com/pages/%D0%90%D0%BB%D1%8C%D0%BF%D0%B8%D0%BD%D0%B8%D0%B7%D0%BC/211619918872448?fref=ts" target="_blank"
+ class="social_ikons" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+
+    </div>
+    <div class="box_footer">
+      <p>
+        Подписаться на рассылку
+      </p>
+      <br>
+     <input type="text" name="search" class="logo_search_button footer_subscribe text_sub">
+      <input type="button" name="subscribe" value="GO" class ="logo_search_button footer_subscribe go_sub">
+	  <span class="sub_hide"><br>Вы успешно подписались!</span>
+    </div>
+
+
+    <div class="box_footer">
+      <p>
+      Контакты:
+      </p>
+      <p>
+        tel: +37517345276345 <br>
+        phone: +374297653412 <br>
+        mail: you_alpinist@gmail.com
+      </p>
+
+    </div>
+</div>
+<div class="box_footer">
+  <p>
+    &copy Все права защищены
+  </p>
+</div>
+</div>
+
+
+</body>
+</html>
