@@ -273,9 +273,10 @@ span.hide
 }
 .left_part
 {
-  flex-grow: 3;
+/*   flex-grow: 3; */
   margin: 5px;
   flex-direction: column;
+  width: 72%;	
 }
 .right_part
 {
@@ -805,7 +806,9 @@ h2
 .teacher_block {
 margin: 0;}
 .teacher {padding: 0;}
-
+.left_part{
+width: 100%;	
+	}
 
 }
 
